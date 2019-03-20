@@ -13,10 +13,9 @@ to run this application you should perform next steps:
 
 ### `project reference`
 
-I have used emantic-ui-react for UI kit.
-I have used `amplify-js` to communicate with AppSync backend.
-I have created Query component to achieve Apollo Client like sugar syntax when fetching queries. I made it with react's render props.
-You can use this anywhere with following syntax:
+I have used `semantic-ui-react` for UI kit, `amplify-js` to communicate with AppSync backend.
+I have created `Query` component to achieve Apollo Client like sugar syntax when fetching queries. Under the hood `Query` component uses React's render props.
+You can use `Query` component anywhere with following syntax:
 ```
 <Query query={listPosts}>
 {({ data, loading }) => {
